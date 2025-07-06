@@ -4,10 +4,11 @@ using UnityEngine;
 public class TelephoneRing : MonoBehaviour
 {
     private bool wasRinging;
-    public bool isRinging;
+    public bool isRinging=true;
 
     private void Start()
     {
+        isRinging=true; // Default to ringing at start
         wasRinging = isRinging;
 
         if (isRinging)

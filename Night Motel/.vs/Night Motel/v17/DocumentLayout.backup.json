@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|c:\\users\\manohar fanibhare\\downloads\\my codes\\games\\night-motel-3d\\night motel\\assets\\scripts\\playerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\telephonering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\telephonering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|c:\\users\\manohar fanibhare\\downloads\\my codes\\games\\night-motel-3d\\night motel\\assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerInteract.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\PlayerInteract.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerInteract.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\PlayerInteract.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerInteract.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvw8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T12:29:33.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelephoneRing.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\TelephoneRing.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TelephoneRing.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\TelephoneRing.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TelephoneRing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:58:48.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SoundManager.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SoundManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wBwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:57:14.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
