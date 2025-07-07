@@ -10,6 +10,8 @@ public class Computer : MonoBehaviour
     [SerializeField] private InputField searchlyinpfield;
     [SerializeField] private TextMeshProUGUI downtext;
     private bool isbooked = false;
+    public bool hasescaped=false;
+    [SerializeField] private GameObject DarkShadow;
     #endregion
 
     public void ComputerStart()
@@ -52,6 +54,8 @@ public class Computer : MonoBehaviour
         searchlyengine.SetActive(false);
         desktop.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        hasescaped = true;
+
     }
 
     private void Update()
@@ -65,7 +69,7 @@ public class Computer : MonoBehaviour
         if(isbooked && Input.GetKey(KeyCode.Escape))
         {
             CloseSuccessScreen();
-           
+            DarkShadow.SetActive(true);
         }
     }
 }

@@ -1,9 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField]private DialogueTrigger dialogueTrigger;
     [SerializeField]private GameObject dialogueCanvas;
+    [SerializeField] private TelephoneRing Telephoneobj;
+    [SerializeField] private TextMeshProUGUI downtext;
     private void Update()
     {
         if (Input.GetKey(KeyCode.E))
@@ -31,6 +34,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 Interatable interatable = hit.collider.GetComponent<Interatable>();
 
+                
                 if (interatable.isInteractable)
                 {
                     Telephone(hit);
@@ -43,9 +47,20 @@ public class PlayerInteract : MonoBehaviour
             {
                 Interatable interatable = hit.collider.GetComponent<Interatable>();
 
-                if(interatable.isInteractable)
+                if (Telephoneobj.isRinging)
                 {
-                    Computer(hit);
+
+                    downtext.text = "The telephone is ringing, you cannot interact with the computer right now.";
+                    Invoke("ClearText", 2f);
+                    return; // Prevent interaction if telephone is ringing
+                }
+
+                else
+                {
+                    if (interatable.isInteractable)
+                    {
+                        Computer(hit);
+                    }
                 }
             }
             #endregion
@@ -76,6 +91,12 @@ public class PlayerInteract : MonoBehaviour
         computer.ComputerStart();
     }
     #endregion
+
+    private void ClearText()
+    {
+        downtext.text = "";
+    }
+
     #endregion
 }
 

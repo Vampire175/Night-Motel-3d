@@ -7,11 +7,27 @@
       "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\interatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\hover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\telephonering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\telephonering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|c:\\users\\manohar fanibhare\\downloads\\my codes\\games\\night-motel-3d\\night motel\\assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\dark shadow jumpscare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dark shadow jumpscare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6EE478E-5A80-033F-CDFC-CA6F99EC4DE8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,8 +38,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Interatable.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Interatable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interatable.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Interatable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interatable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:40:39.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hover.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Hover.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Hover.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Hover.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Hover.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:37:33.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Computer.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Computer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Computer.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Computer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Computer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:27:27.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dark Shadow JumpScare.cs",
+              "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Dark Shadow JumpScare.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dark Shadow JumpScare.cs",
+              "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\Dark Shadow JumpScare.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dark Shadow JumpScare.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:26:57.857Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,36 +96,34 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerInteract.cs",
               "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\PlayerInteract.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerInteract.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvw8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDQAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T12:29:33.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TelephoneRing.cs",
               "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\TelephoneRing.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TelephoneRing.cs",
               "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\TelephoneRing.cs",
               "RelativeToolTip": "Assets\\Scripts\\TelephoneRing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T09:58:48.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T09:58:48.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SoundManager.cs",
               "DocumentMoniker": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\SoundManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SoundManager.cs",
               "ToolTip": "C:\\Users\\Manohar Fanibhare\\Downloads\\My Codes\\Games\\Night-Motel-3d\\Night Motel\\Assets\\Scripts\\SoundManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SoundManager.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA1wBwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T09:57:14.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T09:57:14.182Z"
             }
           ]
         }

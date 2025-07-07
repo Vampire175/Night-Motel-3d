@@ -4,7 +4,8 @@ public enum SoundType
 {
     TelephoneRingSound,
     PickupandHangupSound,
-    Click
+    Click,
+    JumpScare
 }
 
 [RequireComponent(typeof(AudioSource))]

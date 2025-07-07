@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - Telephone
+  - Computer
+  - DarkShadow
   layers:
   - Default
   - TransparentFX
