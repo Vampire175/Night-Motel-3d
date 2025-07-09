@@ -8,6 +8,8 @@ public class DarkShadowJumpScare : MonoBehaviour
     [SerializeField] private GameObject directionallight;
     [SerializeField] private GameObject filmGrain;
     [SerializeField] private FirstPersonController fps;
+    [SerializeField]private LevelLoader levelLoader;
+    [SerializeField] private GameObject levelloadobj;
     private void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -15,6 +17,7 @@ public class DarkShadowJumpScare : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
+           
             if(hit.collider.tag == "DarkShadow"&&computer.hasescaped)
             {
                 Debug.Log("Dark Shadow Hit");
@@ -22,6 +25,8 @@ public class DarkShadowJumpScare : MonoBehaviour
                 filmGrain.SetActive(true);
                 fps.MoveSpeed = 0f; // Stop player movement
                 fps.RotationSpeed = 0f; // Stop player rotation
+
+                Invoke("LevelLoad", 1f); // Load next level after 1 second
             }
 
             
@@ -29,6 +34,12 @@ public class DarkShadowJumpScare : MonoBehaviour
         if (computer.hasescaped)
         {
             directionallight.SetActive(false);
+            levelloadobj.SetActive(true);
         }
+    }
+    public void LevelLoad()
+    {
+        levelLoader.LoadNextLevel();
+  
     }
 }

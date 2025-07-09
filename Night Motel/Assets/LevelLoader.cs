@@ -8,15 +8,20 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private Animator animator;
     public void LoadNextLevel()
     {
-        LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        
+        
     }
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        animator.SetTrigger("Start");
+        animator.SetTrigger("End");
 
         yield return new WaitForSeconds(1f); // Adjust the wait time to match your animation duration
 
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadSceneAsync(levelIndex);
+
+        animator.SetTrigger("Start");
     }
 }
