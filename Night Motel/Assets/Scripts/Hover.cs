@@ -7,7 +7,7 @@ public class Hover : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hover;
-        if (Physics.Raycast(ray, out hover))
+        if (Physics.Raycast(ray, out hover,150f))
         {
             Interatable interatable = hover.collider.GetComponent<Interatable>();
             if (interatable != null)
