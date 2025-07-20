@@ -1,12 +1,16 @@
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
+    #region Variables
     [SerializeField]private DialogueTrigger dialogueTrigger;
     [SerializeField]private GameObject dialogueCanvas;
     [SerializeField] private TelephoneRing Telephoneobj;
     [SerializeField] private TextMeshProUGUI downtext;
+    [SerializeField] private GameObject downtextobj;
+    #endregion
     private void Update()
     {
         if (Input.GetKey(KeyCode.E))
@@ -49,7 +53,7 @@ public class PlayerInteract : MonoBehaviour
 
                 if (Telephoneobj.isRinging)
                 {
-
+                    downtextobj.SetActive(true);
                     downtext.text = "The telephone is ringing, you cannot interact with the computer right now.";
                     Invoke("ClearText", 2f);
                     return; // Prevent interaction if telephone is ringing
@@ -61,6 +65,24 @@ public class PlayerInteract : MonoBehaviour
                     {
                         Computer(hit);
                     }
+                }
+            }
+            #endregion
+
+            #region Bed Interaction
+            if(hit.collider.tag == "Bed")
+            {
+                Interatable interatable = hit.collider.GetComponent<Interatable>();
+
+                if (interatable.isInteractable)
+                {
+                    Debug.Log("You are interact with the bed right now.");
+                    Bed(hit);
+                }
+
+                else
+                {
+                    Debug.Log("Tu mujhe pagal samajhta hai kya:)");
                 }
             }
             #endregion
@@ -92,9 +114,25 @@ public class PlayerInteract : MonoBehaviour
     }
     #endregion
 
+    #region Bed Interaction Method
+    private void Bed(RaycastHit bedcollide)
+    {
+        Bed bed = bedcollide.collider.GetComponent<Bed>();
+        if (bed != null)
+        {
+            bed.Interact();
+        }
+        else
+        {
+            Debug.LogError("No Bed component found on this object: " + bedcollide.collider.name);
+        }
+    }
+    #endregion
+
     private void ClearText()
     {
         downtext.text = "";
+        downtextobj.SetActive(false);
     }
 
     #endregion

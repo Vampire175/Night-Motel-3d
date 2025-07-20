@@ -8,6 +8,7 @@ TagManager:
   - Telephone
   - Computer
   - DarkShadow
+  - Bed
   layers:
   - Default
   - TransparentFX

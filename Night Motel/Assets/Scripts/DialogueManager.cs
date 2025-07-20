@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class DialogueManager : MonoBehaviour {
 
 
 	public TextMeshProUGUI dialogueText;
 	public GameObject diaulogueCanvas;
+	public bool dialogueEnded = false;
 
-	
 
-	private Queue<string> sentences;
+    private Queue<string> sentences;
 
 	// Use this for initialization
 	void Start () {
@@ -29,9 +30,6 @@ public class DialogueManager : MonoBehaviour {
     public void StartDialogue (Dialogue dialogue)
 	{
 		
-
-
-
 		sentences.Clear();
 
 		foreach (string sentence in dialogue.sentences)
@@ -69,6 +67,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		diaulogueCanvas.SetActive(false);
 		SoundManager.PlaySound(SoundType.PickupandHangupSound, 1f);
+		dialogueEnded = true;
     }
 
 }

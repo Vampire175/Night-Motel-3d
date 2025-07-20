@@ -15,7 +15,7 @@ public class DarkShadowJumpScare : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit,150f))
+        if (Physics.Raycast(ray, out hit,15000f))
         {
            
             if(hit.collider.tag == "DarkShadow"&&computer.hasescaped)

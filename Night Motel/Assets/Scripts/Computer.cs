@@ -12,6 +12,9 @@ public class Computer : MonoBehaviour
     private bool isbooked = false;
     public bool hasescaped=false;
     [SerializeField] private GameObject DarkShadow;
+    private bool openedSearchly = false;
+    [SerializeField] private GameObject LabubuDoll;
+    [SerializeField]private LabubuDoll labubuDollScript;
     #endregion
 
     public void ComputerStart()
@@ -29,6 +32,7 @@ public class Computer : MonoBehaviour
         searchlyengine.SetActive(true);
         desktop.SetActive(false);
         SoundManager.PlaySound(SoundType.Click, 1f);
+        openedSearchly = true;
     }
 
     public void OpenBookingWindow()
@@ -47,7 +51,7 @@ public class Computer : MonoBehaviour
         isbooked = true;
     }
 
-    public void CloseSuccessScreen()
+    public void GenerateLabubuDoll()
     {
         Successwindow.SetActive(false);
         bookingwindow.SetActive(false);
@@ -55,7 +59,7 @@ public class Computer : MonoBehaviour
         desktop.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         hasescaped = true;
-
+        LabubuDoll.SetActive(true);
     }
 
     private void Update()
@@ -63,13 +67,21 @@ public class Computer : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Return)|| Input.GetKey(KeyCode.Return))
         {
-            OpenBookingWindow();
+            if (openedSearchly)
+            {
+                OpenBookingWindow();
+            }
+
+            else
+            {
+                Debug.Log("Pagal Samjha Kya:)");
+            }
         }
 
         if(isbooked && Input.GetKey(KeyCode.Escape))
         {
-            CloseSuccessScreen();
-            DarkShadow.SetActive(true);
+            GenerateLabubuDoll();
+            labubuDollScript.Jumpscared = true;
         }
     }
 }

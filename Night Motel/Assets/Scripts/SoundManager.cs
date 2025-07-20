@@ -6,7 +6,8 @@ public enum SoundType
     PickupandHangupSound,
     Click,
     JumpScare,
-    Walking
+    Walking,
+    HorrorBgWhileKilling
 }
 
 [RequireComponent(typeof(AudioSource))]
