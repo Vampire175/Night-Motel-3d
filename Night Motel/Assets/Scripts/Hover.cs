@@ -18,6 +18,11 @@ public class Hover : MonoBehaviour
             {
                 hovercircle.SetActive(false);
             }
+
+            if (hover.collider.gameObject.CompareTag("Paper"))
+            {
+                SoundManager.PlayLoopSound(SoundType.HorrorBgWhileKilling, 1f);
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public enum SoundType
 {
@@ -7,7 +8,17 @@ public enum SoundType
     Click,
     JumpScare,
     Walking,
-    HorrorBgWhileKilling
+    HorrorBgWhileKilling,
+    PaperFloating,
+    ScreamingSound,
+    ThatSusSound
+}
+
+[System.Serializable]
+public class SoundClip
+{
+    public SoundType soundType;
+    public AudioClip clip;
 }
 
 [RequireComponent(typeof(AudioSource))]
@@ -18,7 +29,8 @@ public class SoundManager : MonoBehaviour
     private AudioSource oneShotAudioSource;
     private AudioSource loopAudioSource;
 
-    [SerializeField] private AudioClip[] clips;
+    [SerializeField] private SoundClip[] soundClips;
+    private Dictionary<SoundType, AudioClip> soundDictionary;
 
     void Awake()
     {
@@ -31,6 +43,20 @@ public class SoundManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject); // Optional: persist between scenes
+
+        // Initialize dictionary
+        soundDictionary = new Dictionary<SoundType, AudioClip>();
+        foreach (var soundClip in soundClips)
+        {
+            if (!soundDictionary.ContainsKey(soundClip.soundType))
+            {
+                soundDictionary.Add(soundClip.soundType, soundClip.clip);
+            }
+            else
+            {
+                Debug.LogWarning($"SoundManager: Duplicate SoundType {soundClip.soundType} found!");
+            }
+        }
     }
 
     private void Start()
@@ -48,16 +74,26 @@ public class SoundManager : MonoBehaviour
     /// </summary>
     public static void PlaySound(SoundType soundType, float volume = 1f)
     {
-        if (instance == null) return;
-
-        AudioClip clip = instance.clips[(int)soundType];
-        if (clip != null)
+        if (instance == null)
         {
-            instance.oneShotAudioSource.PlayOneShot(clip, volume);
+            Debug.LogWarning("SoundManager: No instance found!");
+            return;
+        }
+
+        if (instance.soundDictionary.TryGetValue(soundType, out AudioClip clip))
+        {
+            if (clip != null)
+            {
+                instance.oneShotAudioSource.PlayOneShot(clip, volume);
+            }
+            else
+            {
+                Debug.LogWarning($"SoundManager: Clip for {soundType} is null!");
+            }
         }
         else
         {
-            Debug.LogWarning($"SoundManager: Clip for {soundType} is missing!");
+            Debug.LogWarning($"SoundManager: No clip found for {soundType}!");
         }
     }
 
@@ -66,24 +102,34 @@ public class SoundManager : MonoBehaviour
     /// </summary>
     public static void PlayLoopSound(SoundType soundType, float volume = 1f)
     {
-        if (instance == null) return;
-
-        AudioClip clip = instance.clips[(int)soundType];
-        if (clip == null)
+        if (instance == null)
         {
-            Debug.LogWarning($"SoundManager: Clip for {soundType} is missing!");
+            Debug.LogWarning("SoundManager: No instance found!");
             return;
         }
 
-        if (instance.loopAudioSource.isPlaying && instance.loopAudioSource.clip == clip)
+        if (instance.soundDictionary.TryGetValue(soundType, out AudioClip clip))
         {
-            // Already playing this clip, do nothing
-            return;
-        }
+            if (clip == null)
+            {
+                Debug.LogWarning($"SoundManager: Clip for {soundType} is null!");
+                return;
+            }
 
-        instance.loopAudioSource.clip = clip;
-        instance.loopAudioSource.volume = volume;
-        instance.loopAudioSource.Play();
+            if (instance.loopAudioSource.isPlaying && instance.loopAudioSource.clip == clip)
+            {
+                // Already playing this clip, do nothing
+                return;
+            }
+
+            instance.loopAudioSource.clip = clip;
+            instance.loopAudioSource.volume = volume;
+            instance.loopAudioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning($"SoundManager: No clip found for {soundType}!");
+        }
     }
 
     /// <summary>
@@ -106,5 +152,65 @@ public class SoundManager : MonoBehaviour
     public static bool IsLoopSoundPlaying()
     {
         return instance != null && instance.loopAudioSource.isPlaying;
+    }
+
+    /// <summary>
+    /// Check if a specific loop sound is playing.
+    /// </summary>
+    public static bool IsLoopSoundPlaying(SoundType soundType)
+    {
+        if (instance == null) return false;
+
+        if (instance.soundDictionary.TryGetValue(soundType, out AudioClip clip))
+        {
+            return instance.loopAudioSource.isPlaying && instance.loopAudioSource.clip == clip;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Set volume for one-shot sounds.
+    /// </summary>
+    public static void SetOneShotVolume(float volume)
+    {
+        if (instance != null)
+        {
+            instance.oneShotAudioSource.volume = volume;
+        }
+    }
+
+    /// <summary>
+    /// Set volume for looping sounds.
+    /// </summary>
+    public static void SetLoopVolume(float volume)
+    {
+        if (instance != null)
+        {
+            instance.loopAudioSource.volume = volume;
+        }
+    }
+
+    /// <summary>
+    /// Get the current instance (useful for debugging).
+    /// </summary>
+    public static SoundManager GetInstance()
+    {
+        return instance;
+    }
+
+    private void OnValidate()
+    {
+        // Check for missing clips in the editor
+        if (soundClips != null)
+        {
+            for (int i = 0; i < soundClips.Length; i++)
+            {
+                if (soundClips[i].clip == null)
+                {
+                    Debug.LogWarning($"SoundManager: Missing audio clip for {soundClips[i].soundType}");
+                }
+            }
+        }
     }
 }

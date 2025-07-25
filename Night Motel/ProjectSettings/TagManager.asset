@@ -9,6 +9,9 @@ TagManager:
   - Computer
   - DarkShadow
   - Bed
+  - Paper
+  - Killer
+  - Knife
   layers:
   - Default
   - TransparentFX
