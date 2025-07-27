@@ -32,6 +32,7 @@ public class KillTheKiller : MonoBehaviour
                 BlackScreen.SetActive(true); // Activate the black screen
                 SoundManager.PlaySound(SoundType.ScreamingSound, 1f);
                 SoundManager.StopLoopSound();
+                Cursor.lockState=CursorLockMode.None; // Unlock the cursor
             }
         }
     }

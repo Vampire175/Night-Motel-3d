@@ -47,6 +47,7 @@ public class KillerAnimation : MonoBehaviour
         BlackScreen.SetActive(true);
         SoundManager.PlaySound(SoundType.ThatSusSound, 1f);
         SoundManager.StopLoopSound();   
-        
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+
     }
 }

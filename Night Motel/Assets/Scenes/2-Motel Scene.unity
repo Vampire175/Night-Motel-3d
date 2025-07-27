@@ -17572,7 +17572,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1366, y: 768}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -17841,7 +17841,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.041748047, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -17871,8 +17871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000040814, y: 19.299}
-  m_SizeDelta: {x: 1365.8, y: 144.59}
+  m_AnchoredPosition: {x: 0.00016403, y: 19.3}
+  m_SizeDelta: {x: 1279.8, y: 144.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!28 &640576182
 Texture2D:
@@ -18451,8 +18451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 550, y: -67.995}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 528.0802, y: -67.995}
+  m_SizeDelta: {x: 133.78, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874882773
 MonoBehaviour:
@@ -21348,8 +21348,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.194}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.08326685, y: -292.49744}
-  m_SizeDelta: {x: 1365.8, y: 183.1851}
+  m_AnchoredPosition: {x: 18.343681, y: -292.55972}
+  m_SizeDelta: {x: 1279.8086, y: 183.1851}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805876889
 MonoBehaviour:
@@ -40837,15 +40837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51e3061b03f1ac4bb8aed0be503c6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: 46dd9dc86a221c04e9659b0fec2ca575, type: 3}
-  - {fileID: 8300000, guid: aff962643ba03d143b2bf84132ec6ade, type: 3}
-  - {fileID: 8300000, guid: caca2d9def222da498d95b6d01e46aaf, type: 3}
-  - {fileID: 8300000, guid: ab09fba2cca6fbf48936246cd86ee38e, type: 3}
-  - {fileID: 8300000, guid: 74e36688c8a7d544cb5fd9c73cd0b8af, type: 3}
-  - {fileID: 8300000, guid: 853ffc0792955394b9b0855c15af11eb, type: 3}
-  - {fileID: 8300000, guid: 81373ee69fe96224da1adfafe11b5ede, type: 3}
-  - {fileID: 8300000, guid: c112c76fbac8dee4e8c060dff4a93b39, type: 3}
+  soundClips: []
 --- !u!4 &3433448409904827190
 Transform:
   m_ObjectHideFlags: 0
